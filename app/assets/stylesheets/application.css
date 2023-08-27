@@ -13,3 +13,6 @@
  *= require_tree .
  *= require_self
  */
+ .form-div {
+    width: 500px !important /* You can change 300px to your desired fixed width */
+}

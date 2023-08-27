@@ -1,7 +1,9 @@
 <h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
 <% if current_user %>
 <h2><%= current_user.email %></h2>
+
+<%= link_to  "Go to notes!", notes_url %>
+<br>
 <% if current_user.avatar_url!=nil %>
 <%= image_tag(current_user.avatar_url) %>
 <%end%>
