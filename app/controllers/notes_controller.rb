@@ -1,9 +1,10 @@
 class NotesController < ApplicationController
   before_action :set_note, only: %i[ show edit update destroy ]
+  before_action :authenticate_user!
 
   # GET /notes or /notes.json
   def index
-    @notes = Note.all
+    @notes = current_user.notes
   end
 
   # GET /notes/1 or /notes/1.json
@@ -25,7 +26,7 @@ class NotesController < ApplicationController
 
     respond_to do |format|
       if @note.save
-        format.html { redirect_to note_url(@note), notice: "Note was successfully created." }
+        format.html { redirect_to notes_url, notice: "Note was successfully created." }
         format.json { render :show, status: :created, location: @note }
       else
         format.html { render :new, status: :unprocessable_entity }

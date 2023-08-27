@@ -1,13 +1,7 @@
-<div id="<%= dom_id note %>">
+<div class="note" id="<%= dom_id note %>">
   <p>
-    <strong>Title:</strong>
-    <%= note.title %>
-
+    <%= link_to note.title, note ,class: "note-title"%>
   </p>
-  <p>    <%= note.body %> </p>
+  <p><%= note.body %></p>
   <p>
-    <strong>User:</strong>
-    <%= note.user_id %>
-  </p>
-
 </div>

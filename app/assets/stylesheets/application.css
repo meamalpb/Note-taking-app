@@ -16,3 +16,116 @@
  .form-div {
     width: 500px !important /* You can change 300px to your desired fixed width */
 }
+
+#notes-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Adjust this gap as needed */
+  }
+  
+  .note {
+    width: calc(20% - 20px); /* Adjust the width and margin as needed */
+    background-color: #D67BFF;
+    color: #040D12;
+    padding: 10px;
+    box-sizing: border-box;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+  .note-title{
+    text-decoration: none;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+  }
+/* Define button styles */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Primary button style */
+  .primary {
+    background-color: #007bff; /* Blue color */
+    color: #ffffff;
+  }
+  
+  /* Add hover effect */
+  .button:hover {
+    background-color: #0056b3; /* Darker blue color on hover */
+  }
+
+  body{
+    margin-left: 300px;
+    margin-right: 300px;
+    background-color: #FEFFAC ;
+}
+
+/* Form container */
+.styled-form {
+    width: 400px;
+    margin: 0 auto;
+  }
+  
+  /* Error messages */
+  .error-messages {
+    color: red;
+    margin-bottom: 20px;
+  }
+  
+  /* Form groups */
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .form-input,
+  .form-textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  /* Form actions */
+  .form-actions {
+    margin-top: 20px;
+  }
+  
+  .button {
+    display: inline-block;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    color: white;
+  }
+  
+  .primary {
+    background-color: #007bff;
+  }
+  
+  .button:hover {
+    background-color: #0056b3;
+  }
+  
